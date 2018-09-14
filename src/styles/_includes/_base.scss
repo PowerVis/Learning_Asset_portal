@@ -1,0 +1,50 @@
+html,
+button,
+input,
+select,
+textarea {
+    font-family: eyinterstate,arial;
+}
+fieldset{
+    border: medium none;
+}
+body {
+    min-height: 100%;
+
+}
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+dd {
+    margin: 0;
+}
+
+
+.row{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    background-color: $white;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 1px 1.732px 5px 0px rgba(0, 0, 0, 0.078);
+    .logo{
+        float: left;
+        margin: 20px;
+    }
+    .COEtitle{
+        float: left;
+        font-size: 34px;
+        color: #727070;
+        margin-top: 36px;
+    }
+
+    #menu{
+        margin: 0;
+    }
+}

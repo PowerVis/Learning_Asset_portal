@@ -1,0 +1,51 @@
+{
+  "name": "Learning_Asset_Portal",
+  "version": "0.0.1",
+  "description": "Learning Asset Portal",
+  "license": "MIT",
+  "main": "",
+  "repository": "ALP_2",
+  "author": {
+    "name": "Rokas Valeckas",
+    "email": "rokas@rokart.co.uk",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "optimize": "gulp optimize",
+    "deploy": "gulp deploy",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.16.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssimport": "^6.0.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uncss": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.50",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "critical": "^1.3.4",
+    "gulp-add-src": "^1.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-develop-server": "^0.5.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-inline-base64": "^0.1.5",
+    "mocha": "*"
+  }
+}
