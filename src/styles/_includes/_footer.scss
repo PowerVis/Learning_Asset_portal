@@ -1,0 +1,21 @@
+.footer {
+    background-color: #000000;
+    color: #999999;
+    font-size: 0.75em;
+    height: 50px;
+    .row {
+        padding-top: 20px;
+        .floatleft {
+            float: left;
+        }
+        .floatright {
+            float: right;
+        }
+        .light-grey {
+            color: lightgray;
+        }
+    }
+    a {
+        color: #999999;
+    }
+}
