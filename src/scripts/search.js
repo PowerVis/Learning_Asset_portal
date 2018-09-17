@@ -169,7 +169,7 @@ $(document).ready(function () {
                     container: '.pag',
                     visiblePages: 5,
                     perPage: {
-                        values: [20, 50, 100],
+                        values: [9, 51, 102],
                         container: '.per_page'
                     }
                 }
@@ -179,7 +179,8 @@ $(document).ready(function () {
             FJS.addCriteria({field: 'Topic', ele: '#Topic input:checkbox'});
             FJS.addCriteria({field: 'Service_x0020_Line', ele: '#Serviceline input:checkbox'});
             FJS.addCriteria({field: 'Length', ele: '#Length input:checkbox'});
-
+            FJS.addCriteria({field: 'Current_x0020_branding', ele: '#Current_x0020_branding input:checkbox'});
+            FJS.addCriteria({field: 'Client_x0020_references', ele: '#Client_x0020_references input:checkbox'});
 
             window.FJS = FJS;
         });
