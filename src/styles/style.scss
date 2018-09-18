@@ -420,7 +420,7 @@
             background: #e1e5e7;
             box-shadow: 2px 1.732px 5px 0px rgba(0, 0, 0, 0.4);
             transition: all 0.5s ease;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             @include grid(1, 0%);
             @include break(920px){
@@ -443,7 +443,7 @@
             .caption {
                 padding: 9px;
                 color: #333;
-                padding-bottom: 50px;
+                padding-bottom: 10px;
                 h4{                    
                     font-size: 25px;
                     margin: 10px 0;

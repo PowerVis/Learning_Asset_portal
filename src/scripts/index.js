@@ -1,7 +1,7 @@
 
-var sourseUrl = "src.json";
+//var sourseUrl = "src.json";
 
-// var sourseUrl = "https://sites.ey.com/sites/digitalassets/_api/web/Lists/getByTitle('database')/items?$top=2000";
+ var sourseUrl = "https://sites.ey.com/sites/digitalassets/_api/web/Lists/getByTitle('database')/items?$top=2000";
 //
 //
 //  var sourseUrl = "https://sites.ey.com/sites/digitalassets/_api/web/Lists/getByTitle('database')/items?$top=2000&$expand=AttachmentFiles";
@@ -211,42 +211,4 @@ jQuery(document).ready(function ($) {
 
 });
 
-
-
-
-function secondsToString(seconds) {
-    var value = seconds;
-    var units = {
-        "hour": 60,
-        "minute": 1
-    };
-    var result = [];
-    for (var name in units) {
-        var p = Math.floor(value / units[name]);
-
-        if (p == 1)
-            result.push(" " + p + " " + name);
-        if (p >= 2)
-            result.push(" " + p + " " + name + "s");
-
-        value %= units[name];
-    }
-    return result;
-}
-
-
-(function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l;
-    b[l] || (b[l] =
-            function () {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-    b[l].l = +new Date;
-    e = o.createElement(i);
-    r = o.getElementsByTagName(i)[0];
-    e.src = '//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e, r)
-}(window, document, 'script', 'ga'));
-ga('create', 'UA-84567289-1', 'auto');
-ga('send', 'pageview');
 

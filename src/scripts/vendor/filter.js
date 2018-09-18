@@ -287,7 +287,14 @@
     // rVal = Record Value
     // cVal = Condition Value
     var arrayMatcher = function (rVal, cVal, cFn) {
-        var i = 0, l = rVal.length;
+
+        if (rVal === null) {
+            rVal = "";
+        }
+
+
+        var i = 0;
+        var l = rVal.length;
 
         for (i; i < l; i++) {
             if (cFn(rVal[i], cVal))
@@ -336,6 +343,17 @@
                 cFn,
                 rVal,
                 qFn = this.getterFns[qField], arrayCFn;
+
+
+//        console.log(qFn);
+
+//        if (qFn === undefined) {            
+//            qFn = function anonymous(obj) {
+//                return {};
+//            };
+//        }
+
+
 
         if (cOpt == 'li' && typeof cVal == 'string') {
             cVal = new RegExp(cVal);

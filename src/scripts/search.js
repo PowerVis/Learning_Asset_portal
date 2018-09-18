@@ -138,10 +138,9 @@ $(document).ready(function () {
 //
 //                        ob[IDes] = c.val();
 //
-//                        if (jQ.where(ob).count) {
-//                            count = jQ.where(ob).count;
-//                            c.parent().find('span').append('<span class="counter"> (' + count + ')</span>')
-//                        }
+//                        count = jQ.where(ob).count;
+//                        c.parent().find('span').append('<span class="counter"> (' + count + ')</span>')
+//
 //
 ////                        c.next().html(c.val() + '<span class="counter"> (' + count + ')</span>');
 //                    });
@@ -177,7 +176,7 @@ $(document).ready(function () {
 
             FJS.addCriteria({field: 'Region', ele: '#Region input:checkbox'});
             FJS.addCriteria({field: 'Topic', ele: '#Topic input:checkbox'});
-            FJS.addCriteria({field: 'Service_x0020_Line', ele: '#Serviceline input:checkbox'});
+            FJS.addCriteria({field: 'Service_x0020_Line', ele: '#Service_x0020_Line input:checkbox'});
             FJS.addCriteria({field: 'Length', ele: '#Length input:checkbox'});
             FJS.addCriteria({field: 'Current_x0020_branding', ele: '#Current_x0020_branding input:checkbox'});
             FJS.addCriteria({field: 'Client_x0020_references', ele: '#Client_x0020_references input:checkbox'});

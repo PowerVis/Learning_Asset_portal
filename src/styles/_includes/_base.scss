@@ -29,6 +29,7 @@ dd {
 
 .header{
     position: fixed;
+    top: 0;
     background-color: $white;
     width: 100%;
     z-index: 999999;
@@ -43,8 +44,32 @@ dd {
         color: #727070;
         margin-top: 36px;
     }
-
-    #menu{
-        margin: 0;
+    #box{
+        position: relative;
+        #menu{
+            float: right;
+            margin: 50px 0 0 0;       
+            li{
+                float: left;
+                list-style: none;
+                padding: 10px;
+                a{
+                    color: black;
+                    text-decoration: none;
+                    position: relative;
+                }
+                .active{
+                    &:after{
+                        position: absolute;
+                        content: " ";
+                        background-color: $yellow;
+                        height: 10px;
+                        width: 100%;
+                        bottom: -19px;
+                        right: 0;
+                    }
+                }
+            }
+        }
     }
 }
