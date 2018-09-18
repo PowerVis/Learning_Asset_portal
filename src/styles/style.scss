@@ -12,7 +12,7 @@
         font-weight: 100;
         font-size: 25px;
         padding: 30px 0 20px 0;
-        
+
     }
     .toppage{
         background-image: url('blueBG.jpg');
@@ -27,8 +27,7 @@
         box-sizing: border-box;
     }
 
-    font-family: "Arial", sans-serif;
-    color: #000000;
+
 
     h4, dd, .checkbox label{
         font-weight: 100;
@@ -861,3 +860,28 @@
 
 }
 
+.homepage{
+    height: 500px;
+    min-height: 100%;
+    .toppage{
+        background-image: url('blueBG.jpg');
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        min-height: 200px;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        #full-video {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: 0;
+        }
+    }
+}

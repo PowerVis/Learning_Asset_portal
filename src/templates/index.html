@@ -1,18 +1,12 @@
-    
-
 @@include('./head.html')
-
 <body class="homepage">
     <div class="header">
-
         <div class="logo">
             <a href="/"><img src="assets/css/EYLogo.png" alt="EY logo" /></a>
         </div>
         <div class="COEtitle">
             <b>COE</b> - ASSETS
         </div>
-
-
         <div class="row">
             <div id="nav-icon">
                 <span></span>
@@ -31,16 +25,18 @@
         </div>
         <div class="clearfix"></div>
     </div>
-
-
-    <div data-page="home" class="page1 section">
+    <div class="toppage">
+        <video id="full-video" preload autoplay loop>
+            <source src="assets/files/Final.mp4" type="video/mp4">
+            fallback image 
+            <img src="css/mainimage.jpg"/>
+        </video>
         <div class="row">
 
         </div>
     </div>
 
-
-    @@include('./footer-banner.html')
+    @@include('./footer.html')
     <script src="assets/js/script.js"></script>
     <script src="assets/js/home.js"></script>
 
