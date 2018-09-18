@@ -49,16 +49,16 @@ var routes = {
             baseDirs.src + 'scripts/vendor/jquery.min.js',
             baseDirs.src + 'scripts/vendor/migrate.js',
             baseDirs.src + 'scripts/vendor/jquery.easing.min.js',
-            baseDirs.src + 'scripts/vendor/jquery.mousewheel.min.js',
+//            baseDirs.src + 'scripts/vendor/jquery.mousewheel.min.js',
 //            baseDirs.src + 'scripts/vendor/jquery.simplr.smoothscroll.js',
-            baseDirs.src + 'scripts/vendor/waypoints.js',
-            baseDirs.src + 'scripts/vendor/jquery.featureCarousel.min.js',
+//            baseDirs.src + 'scripts/vendor/waypoints.js',
+//            baseDirs.src + 'scripts/vendor/jquery.featureCarousel.min.js',
             baseDirs.src + 'scripts/vendor/jquery-ui-1.10.2.custom.min.js',
             baseDirs.src + 'scripts/vendor/filter.js',
-            baseDirs.src + 'scripts/vendor/xepOnline.jqPlugin.js',
+//            baseDirs.src + 'scripts/vendor/xepOnline.jqPlugin.js',
 //            baseDirs.src + 'scripts/vendor/jspdf.min.js',
 //            baseDirs.src + 'scripts/vendor/html2canvas.min.js',
-            
+
             baseDirs.src + 'scripts/index.js'
 
         ],
@@ -68,6 +68,8 @@ var routes = {
     files: {
         html: 'dist/',
         images: baseDirs.src + 'images/**/*',
+        files: baseDirs.src + 'files/**/*',
+        exportedfiles: baseDirs.assets + 'files/',
         baseimages: baseDirs.src + 'images',
         imgmin: baseDirs.assets + 'css/',
         cssFiles: baseDirs.assets + 'css/*.css',
@@ -170,6 +172,11 @@ gulp.task('images', function () {
             .pipe(gulp.dest(routes.files.imgmin));
 });
 
+gulp.task('files', function () {
+    gulp.src(routes.files.files)
+            .pipe(gulp.dest(routes.files.exportedfiles));
+});
+
 
 /* Serving (browserSync) and watching for changes in files */
 
@@ -183,6 +190,7 @@ gulp.task('serve', function () {
     gulp.watch(routes.templates.allhtml, ['templates']);
     gulp.watch(baseDirs.src + 'scripts/**/*.js', ['scripts']);
     gulp.watch(routes.files.images, ['images']);
+    gulp.watch(routes.files.files, ['files']);
     gulp.watch(routes.files.htmlFiles).on('change', browserSync.reload);
 
 });
@@ -235,7 +243,7 @@ gulp.task('critical', function () {
             }));
 });
 
-gulp.task('dev', ['templates', 'images', 'styles', 'scripts', 'serve']);
+gulp.task('dev', ['templates', 'files', 'images', 'styles', 'scripts', 'serve']);
 gulp.task('build', ['templates', 'styles', 'scripts', 'images']);
 gulp.task('optimize', ['uncss', 'critical', 'images']);
 gulp.task('deploy', ['optimize']);
