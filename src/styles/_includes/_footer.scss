@@ -1,6 +1,5 @@
 footer {
     background-color: #333333;
-    // color: #bdc0c2;
     color: #d3d1d1;
     .footer {
         background-color: #000000;
@@ -39,9 +38,12 @@ footer {
         padding: 10px;
         position: relative;
         left: 10px;
+        a {
+            color: inherit;
+        }
         .icon {
             position: relative;
-            top: 5px;
+            top: 8px;
             padding-right: 5px;
         }
     }
