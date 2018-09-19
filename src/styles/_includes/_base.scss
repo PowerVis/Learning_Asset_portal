@@ -74,3 +74,43 @@ dd {
         }
     }
 }
+
+.carousel{
+    z-index: 10;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    width: 30%;
+    padding: 10px;
+    right: 100px;
+    top: 160px;
+    .slick-list {
+        overflow: hidden;
+        .slick-slide{
+            padding: 20px;
+            float: left;
+        }
+    }
+}
+
+.slick-dots {
+    margin: 0;
+    padding-top: 20px;
+    padding: 0;
+    text-align: center;
+    li {
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        background-color: #fff;
+        height: 20px;
+        margin-left: 20px;
+        width: 20px;
+        button{
+            display: none;
+        }
+    }
+    li.slick-active {
+        background-color: $yellow;
+    }
+}
+

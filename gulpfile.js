@@ -55,6 +55,7 @@ var routes = {
 //            baseDirs.src + 'scripts/vendor/jquery.featureCarousel.min.js',
             baseDirs.src + 'scripts/vendor/jquery-ui-1.10.2.custom.min.js',
             baseDirs.src + 'scripts/vendor/filter.js',
+            baseDirs.src + 'scripts/vendor/slick.js',
 //            baseDirs.src + 'scripts/vendor/xepOnline.jqPlugin.js',
 //            baseDirs.src + 'scripts/vendor/jspdf.min.js',
 //            baseDirs.src + 'scripts/vendor/html2canvas.min.js',
